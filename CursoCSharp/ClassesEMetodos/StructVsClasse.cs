@@ -33,7 +33,7 @@ namespace CursoCSharp.ClassesEMetodos {
             ponto2.X = 4;
 
             Console.WriteLine($"Ponto 2 X:{ponto2.X}");
-            Console.WriteLine($"Copia Ponto 2 X:{ponto2.Y}");
+            Console.WriteLine($"Copia Ponto 2 X:{copiaPonto2.Y}");
         }
     }
 }
