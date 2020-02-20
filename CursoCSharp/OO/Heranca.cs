@@ -25,7 +25,7 @@ namespace CursoCSharp.OO {
             return VelocidadeAtual;
         }
 
-        public int Acelerar() {
+        public virtual int Acelerar() {
             return AlterarVelocidade(5);
         }
     
@@ -40,6 +40,15 @@ namespace CursoCSharp.OO {
 
     public class Ferrari: Carro {
         public Ferrari(): base(350) { }
+
+        public override int Acelerar() {
+            return AlterarVelocidade(15);
+        }
+
+        // Oculta o método da classe Pai
+        public new int Frear() {
+            return AlterarVelocidade(-15);
+        }
     }
 
     class Heranca {
@@ -59,7 +68,23 @@ namespace CursoCSharp.OO {
             Console.WriteLine(carro2.Frear());
             Console.WriteLine(carro2.Frear());
             Console.WriteLine(carro2.Frear());
-            ;
+
+            Console.WriteLine("Ferrari com tipo Carro...");
+            Carro carro3 = new Ferrari(); // Polimorfismo
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
+
+            Console.WriteLine("Uno com tipo Carro...");
+            carro3 = new Uno(); // Polimorfismo
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
+
         }
     }
 }
