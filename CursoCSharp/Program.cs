@@ -99,6 +99,7 @@ namespace CursoCSharp {
                 {"Exemplo FileInfo - Usando Api", ExemploFileInfo.Executar },
                 {"Diretorios - Usando Api", Diretorios.Executar },
                 {"Exemplo DirectoryInfo - Usando Api", ExemploDirectoryInfo.Executar },
+                {"Exemplo Path - Usando Api", ExemploPath.Executar },
             });
 
             central.SelecionarEExecutar();
