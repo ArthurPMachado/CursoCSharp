@@ -38,6 +38,8 @@ namespace CursoCSharp.Excecoes {
                 Console.WriteLine(excecao.Message);
             } catch(ImparException excecao) {
                 Console.WriteLine(excecao.Message);
+            } catch(Exception excecao) {
+                Console.WriteLine(excecao.Message);
             }
         }
     }
