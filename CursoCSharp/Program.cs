@@ -100,6 +100,7 @@ namespace CursoCSharp {
                 {"Diretorios - Usando Api", Diretorios.Executar },
                 {"Exemplo DirectoryInfo - Usando Api", ExemploDirectoryInfo.Executar },
                 {"Exemplo Path - Usando Api", ExemploPath.Executar },
+                {"Exemplo DateTime - Usando Api", ExemploDateTime.Executar },
             });
 
             central.SelecionarEExecutar();
